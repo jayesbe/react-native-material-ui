@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { View, Platform, Animated, Easing, StyleSheet } from 'react-native';
+import { View, Platform, Animated, Easing, StyleSheet, ViewPropTypes } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 import BottomNavigationAction from './BottomNavigationAction.react';
@@ -23,7 +23,7 @@ const propTypes = {
     * Inline style of bottom navigation
     */
     style: PropTypes.shape({
-        container: View.propTypes.style,
+        container: ViewPropTypes.style,
     }),
 };
 const defaultProps = {

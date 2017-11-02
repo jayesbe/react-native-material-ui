@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { View, Text, Animated, Easing, Platform, StyleSheet } from 'react-native';
+import { View, Text, Animated, Easing, Platform, StyleSheet, ViewPropTypes } from 'react-native';
 
 import Button from '../Button';
 
@@ -45,8 +45,8 @@ const propTypes = {
     * Inline style of snackbar
     */
     style: PropTypes.shape({
-        container: View.propTypes.style,
-        message: View.propTypes.style,
+        container: ViewPropTypes.style,
+        message: ViewPropTypes.style,
     }),
 };
 const defaultProps = {

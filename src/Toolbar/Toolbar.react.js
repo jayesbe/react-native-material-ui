@@ -10,6 +10,8 @@ import {
     StyleSheet,
     Text,
     View,
+    ViewPropTypes,
+    TextStylePropTypes
 } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 import LeftElement from './LeftElement.react';
@@ -66,12 +68,12 @@ const propTypes = {
     * You can overide any style for the component via this prop
     */
     style: PropTypes.shape({
-        container: View.propTypes.style,
-        leftElementContainer: View.propTypes.style,
+        container: ViewPropTypes.style,
+        leftElementContainer: ViewPropTypes.style,
         leftElement: IconToggle.propTypes.style,
-        centerElementContainer: View.propTypes.style,
-        titleText: Text.propTypes.style,
-        rightElementContainer: View.propTypes.style,
+        centerElementContainer: ViewPropTypes.style,
+        titleText: TextStylePropTypes,
+        rightElementContainer: ViewPropTypes.style,
         rightElement: IconToggle.propTypes.style,
     }),
     /**

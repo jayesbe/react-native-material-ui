@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Image, Text, StyleSheet, ViewPropTypes, TextStylePropTypes } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Icon from '../Icon';
 
@@ -34,8 +34,8 @@ const propTypes = {
     * Inline style of avatar
     */
     style: PropTypes.shape({
-        container: View.propTypes.style,
-        content: Text.propTypes.style,
+        container: ViewPropTypes.style,
+        content: TextStylePropTypes,
     }),
 };
 const defaultProps = {
