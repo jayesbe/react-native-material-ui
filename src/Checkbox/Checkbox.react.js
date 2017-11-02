@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved, import/extensions */
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, View } from 'react-native';
-import React, { PureComponent, PropTypes } from 'react';
+import React, { PureComponent } from 'react';
 /* eslint-enable import/no-unresolved, import/extensions */
 import IconToggle from '../IconToggle';
 import RippleFeedback from '../RippleFeedback';
