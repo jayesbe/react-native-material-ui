@@ -25,7 +25,7 @@ const propTypes = {
     divider: PropTypes.bool,
     onPress: PropTypes.func,
     onPressValue: PropTypes.any,
-    numberOfLines: React.PropTypes.oneOf([1, 2, 3, 'dynamic']),
+    numberOfLines: PropTypes.oneOf([1, 2, 3, 'dynamic']),
     style: PropTypes.object,
 
     // left side
